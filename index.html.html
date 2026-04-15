@@ -1,0 +1,381 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Seni Musik Kelas 6 - SDN 60 Prabumulih</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Poppins', sans-serif;
+            background-color: #f0fdf4;
+            scroll-behavior: smooth;
+        }
+        .correct {
+            background-color: #22c55e !important; /* Tailwind green-500 */
+            color: white !important;
+            border-color: #16a34a !important;
+        }
+        .wrong {
+            background-color: #ef4444 !important; /* Tailwind red-500 */
+            color: white !important;
+            border-color: #dc2626 !important;
+        }
+        .disabled {
+            opacity: 0.7;
+            pointer-events: none;
+        }
+        /* Custom scrollbar untuk panel soal */
+        .custom-scroll::-webkit-scrollbar {
+            width: 8px;
+        }
+        .custom-scroll::-webkit-scrollbar-track {
+            background: #f1f1f1; 
+            border-radius: 10px;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb {
+            background: #cbd5e1; 
+            border-radius: 10px;
+        }
+        .custom-scroll::-webkit-scrollbar-thumb:hover {
+            background: #94a3b8; 
+        }
+    </style>
+</head>
+<body class="text-gray-800">
+
+    <!-- Header / Navbar -->
+    <header class="bg-green-600 text-white shadow-lg sticky top-0 z-50">
+        <div class="container mx-auto px-6 py-4 flex flex-col md:flex-row justify-between items-center">
+            <div>
+                <h1 class="text-2xl font-bold">🎵 Seni Musik Kelas 6</h1>
+                <p class="text-green-100 text-sm">SD Negeri 60 Prabumulih - Semester Genap (Kurikulum Merdeka)</p>
+            </div>
+            <nav class="mt-4 md:mt-0 flex gap-4">
+                <a href="#materi" class="bg-green-500 hover:bg-green-400 px-4 py-2 rounded-full font-semibold transition">Materi</a>
+                <a href="#kuis" class="bg-yellow-400 text-green-900 hover:bg-yellow-300 px-4 py-2 rounded-full font-semibold transition">Kuis Interaktif</a>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto px-4 py-8 max-w-7xl">
+        
+        <!-- SECTION MATERI -->
+        <section id="materi" class="bg-white rounded-2xl shadow-xl p-8 mb-12 border-t-8 border-yellow-400">
+            <h2 class="text-3xl font-bold text-green-700 mb-6 text-center">📖 Rangkuman Materi Pembelajaran</h2>
+            
+            <div class="grid md:grid-cols-2 gap-8">
+                <!-- Tangga Nada -->
+                <div class="bg-blue-50 p-6 rounded-xl border border-blue-200">
+                    <h3 class="text-xl font-bold text-blue-800 mb-4 flex items-center">🎼 1. Tangga Nada Diatonis</h3>
+                    <p class="mb-4">Tangga nada diatonis adalah tangga nada yang memiliki <strong>7 nada pokok</strong> (Do, Re, Mi, Fa, Sol, La, Si).</p>
+                    
+                    <h4 class="font-bold text-blue-700">A. Diatonis Mayor</h4>
+                    <ul class="list-disc ml-5 mb-4 text-sm space-y-1">
+                        <li><strong>Interval (Jarak Nada):</strong> 1 - 1 - ½ - 1 - 1 - 1 - ½</li>
+                        <li><strong>Ciri-ciri:</strong> Bersifat riang gembira, bersemangat.</li>
+                        <li><strong>Awal/Akhir:</strong> Biasanya diawali dan diakhiri nada <strong>Do</strong>.</li>
+                        <li><strong>Contoh Lagu:</strong> Hari Merdeka, Garuda Pancasila, Maju Tak Gentar.</li>
+                    </ul>
+
+                    <h4 class="font-bold text-blue-700">B. Diatonis Minor</h4>
+                    <ul class="list-disc ml-5 text-sm space-y-1">
+                        <li><strong>Interval (Jarak Nada):</strong> 1 - ½ - 1 - 1 - ½ - 1 - 1</li>
+                        <li><strong>Ciri-ciri:</strong> Bersifat sedih, kurang bersemangat, syahdu.</li>
+                        <li><strong>Awal/Akhir:</strong> Biasanya diawali dan diakhiri nada <strong>La</strong>.</li>
+                        <li><strong>Contoh Lagu:</strong> Syukur, Mengheningkan Cipta, Gugur Bunga.</li>
+                    </ul>
+                </div>
+
+                <!-- Alat Musik -->
+                <div class="bg-purple-50 p-6 rounded-xl border border-purple-200">
+                    <h3 class="text-xl font-bold text-purple-800 mb-4 flex items-center">🎹 2. Alat Musik Melodis</h3>
+                    <p class="mb-4">Alat musik melodis adalah alat musik yang bernada dan dapat menghasilkan melodi lagu.</p>
+                    
+                    <h4 class="font-bold text-purple-700">A. Pianika</h4>
+                    <ul class="list-disc ml-5 mb-4 text-sm space-y-1">
+                        <li>Dimainkan dengan cara <strong>ditiup dan ditekan</strong>.</li>
+                        <li>Tuts putih untuk nada asli pokok, tuts hitam untuk nada kromatis (kres/mol).</li>
+                        <li>Penjarian menggunakan tangan kanan (5 jari). Ibu jari (jari 1) biasanya untuk nada Do, telunjuk (jari 2) untuk Re, dst.</li>
+                    </ul>
+
+                    <h4 class="font-bold text-purple-700">B. Recorder (Suling Lurus)</h4>
+                    <ul class="list-disc ml-5 text-sm space-y-1">
+                        <li>Dimainkan dengan cara <strong>ditiup</strong>.</li>
+                        <li><strong>Posisi Tangan:</strong> Tangan KIRI di bagian ATAS, tangan KANAN di bagian BAWAH.</li>
+                        <li><strong>Teknik Meniup:</strong> Ditiup dengan lembut dan rata agar suara jernih (tidak pecah).</li>
+                        <li>Lubang harus ditutup rapat sempurna dengan ujung jari/daging jari agar nada tidak sumbang.</li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <!-- SECTION KUIS -->
+        <section id="kuis" class="bg-white rounded-2xl shadow-xl p-8 border-t-8 border-green-500 min-h-screen">
+            <div class="flex justify-between items-center mb-6 border-b pb-4">
+                <h2 class="text-3xl font-bold text-green-700">🎮 Kuis Interaktif (Tampilan Lanskap)</h2>
+            </div>
+
+            <!-- LAYAR PEMILIHAN SISWA -->
+            <div id="setup-screen" class="text-center py-12">
+                <h3 class="text-2xl font-bold text-gray-700 mb-4">Pilih Nama Siswa untuk Memulai Kuis</h3>
+                <p class="text-gray-500 mb-8">Setiap siswa akan mendapatkan 10 soal acak.</p>
+                
+                <select id="student-select" class="block w-full max-w-lg mx-auto p-4 text-xl border-4 border-green-300 rounded-xl focus:outline-none focus:border-green-600 mb-8 bg-green-50 cursor-pointer">
+                    <option value="" disabled selected>-- Pilih Nama Siswa --</option>
+                    <!-- Options akan diisi via JS -->
+                </select>
+
+                <button onclick="startQuiz()" class="bg-green-600 hover:bg-green-700 text-white px-10 py-4 rounded-full font-bold text-2xl shadow-lg transition transform hover:scale-105">
+                    Mulai Kuis Sekarang! 🚀
+                </button>
+            </div>
+
+            <!-- LAYAR KUIS AKTIF (Dibagi 2 Kolom untuk Landscape) -->
+            <div id="quiz-screen" class="hidden">
+                <div class="grid lg:grid-cols-3 gap-8 relative items-start">
+                    
+                    <!-- Kolom Kiri: Daftar Soal -->
+                    <div class="lg:col-span-2 space-y-8 h-[80vh] overflow-y-auto custom-scroll pr-4 pb-20" id="quiz-container">
+                        <!-- Pertanyaan akan di-generate di sini -->
+                    </div>
+
+                    <!-- Kolom Kanan: Papan Skor Sticky -->
+                    <div class="lg:col-span-1 sticky top-24">
+                        <div class="bg-blue-50 p-6 rounded-2xl shadow-xl border-t-8 border-blue-500">
+                            <h3 class="text-lg text-gray-500 font-semibold mb-1">Peserta Kuis:</h3>
+                            <h2 id="active-student-name" class="text-2xl font-bold text-blue-800 mb-6 uppercase border-b-2 border-blue-200 pb-4">NAMA SISWA</h2>
+                            
+                            <div class="space-y-4 mb-6">
+                                <div class="flex justify-between items-center bg-white p-3 rounded-lg border border-gray-200 shadow-sm">
+                                    <span class="font-bold text-gray-600">Soal Terjawab:</span>
+                                    <span id="answered-count" class="font-bold text-xl text-blue-600">0 / 10</span>
+                                </div>
+                                <div class="flex justify-between items-center bg-green-100 p-3 rounded-lg border border-green-300 shadow-sm">
+                                    <span class="font-bold text-green-700">Jawaban Benar:</span>
+                                    <span id="score-benar" class="font-bold text-2xl text-green-600">0</span>
+                                </div>
+                                <div class="flex justify-between items-center bg-red-100 p-3 rounded-lg border border-red-300 shadow-sm">
+                                    <span class="font-bold text-red-700">Jawaban Salah:</span>
+                                    <span id="score-salah" class="font-bold text-2xl text-red-600">0</span>
+                                </div>
+                            </div>
+
+                            <div class="text-center mt-6 pt-6 border-t-2 border-gray-200">
+                                <p class="text-gray-500 font-bold mb-1">TOTAL SKOR</p>
+                                <div id="score-total" class="text-6xl font-extrabold text-blue-600 mb-4 transition-all duration-300">0</div>
+                                
+                                <!-- Keterangan Tuntas / Remedial -->
+                                <div id="status-container" class="hidden py-3 px-4 rounded-xl font-bold text-2xl shadow-inner mt-4 animate-bounce">
+                                    <span id="status-text">TUNTAS</span>
+                                </div>
+                            </div>
+
+                            <button onclick="resetApp()" class="w-full mt-8 bg-gray-200 hover:bg-red-500 hover:text-white text-gray-700 px-4 py-3 rounded-xl font-bold transition shadow-md">
+                                🔄 Ganti Siswa / Ulangi
+                            </button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+
+        </section>
+
+    </main>
+
+    <footer class="bg-green-800 text-white text-center py-6 mt-12">
+        <p>&copy; 2026 SD Negeri 60 Prabumulih - Dibuat untuk Pembelajaran Interaktif (IFP Landscape)</p>
+    </footer>
+
+    <script>
+        const bankSoal = [
+            { q: "Tangga nada yang memiliki 7 nada pokok disebut tangga nada...", options: ["Pentatonis", "Diatonis", "Kromatis", "Slendro"], answer: 1 },
+            { q: "Jarak nada (interval) 1 - 1 - ½ - 1 - 1 - 1 - ½ adalah ciri dari tangga nada...", options: ["Diatonis Minor", "Pentatonis Pelog", "Diatonis Mayor", "Kromatis"], answer: 2 },
+            { q: "Lagu bertangga nada mayor biasanya memiliki sifat...", options: ["Sedih dan syahdu", "Kurang bersemangat", "Mencekam", "Riang gembira dan bersemangat"], answer: 3 },
+            { q: "Tangga nada diatonis minor biasanya diawali dan diakhiri dengan nada...", options: ["Do", "Mi", "Fa", "La"], answer: 3 },
+            { q: "Berikut ini yang merupakan contoh lagu bertangga nada minor adalah...", options: ["Hari Merdeka", "Gugur Bunga", "Garuda Pancasila", "Halo-Halo Bandung"], answer: 1 },
+            { q: "Lagu 'Garuda Pancasila' menggunakan jenis tangga nada...", options: ["Mayor", "Minor", "Pelog", "Slendro"], answer: 0 },
+            { q: "Alat musik yang berfungsi untuk menghasilkan rangkaian melodi nada disebut alat musik...", options: ["Ritmis", "Melodis", "Harmonis", "Perkusi"], answer: 1 },
+            { q: "Jarak nada (interval) pada tangga nada diatonis minor adalah...", options: ["1 - 1 - ½ - 1 - 1 - 1 - ½", "1 - ½ - 1 - 1 - ½ - 1 - 1", "1 - 1 - 1 - ½ - 1 - 1 - ½", "½ - 1 - 1 - ½ - 1 - 1 - 1"], answer: 1 },
+            { q: "Alat musik pianika dimainkan dengan cara...", options: ["Dipukul dan ditekan", "Ditiup dan dipetik", "Ditiup dan ditekan", "Digesek dan ditiup"], answer: 2 },
+            { q: "Saat bermain recorder, posisi tangan yang benar adalah...", options: ["Tangan kanan di atas, tangan kiri di bawah", "Tangan kiri di atas, tangan kanan di bawah", "Boleh bebas asalkan nyaman", "Kedua tangan di tengah"], answer: 1 },
+            { q: "Pada pianika, tuts berwarna hitam digunakan untuk memainkan nada...", options: ["Nada pokok", "Nada tinggi", "Nada rendah", "Nada kromatis (kres/mol)"], answer: 3 },
+            { q: "Agar suara recorder terdengar jernih dan tidak pecah, cara meniupnya harus...", options: ["Sangat kuat", "Terputus-putus", "Lembut dan rata", "Sambil bernyanyi"], answer: 2 },
+            { q: "Jika ada lubang pada recorder yang tidak tertutup rapat saat ditiup, akibatnya adalah...", options: ["Suara menjadi lebih merdu", "Nada yang dihasilkan sumbang/bocor", "Recorder akan rusak", "Suara menjadi lebih keras"], answer: 1 },
+            { q: "Jari tangan yang bertugas menekan tuts-tuts pianika adalah...", options: ["Tangan kiri saja", "Tangan kanan dan kiri", "Tangan kanan saja", "Hanya ibu jari dan telunjuk"], answer: 2 },
+            { q: "Tangga nada diatonis mayor biasanya diawali dan diakhiri dengan nada...", options: ["Do", "Re", "Sol", "La"], answer: 0 },
+            { q: "Alat musik melodis di bawah ini yang hanya perlu ditiup (tanpa ditekan tuts) adalah...", options: ["Pianika", "Gitar", "Recorder", "Drum"], answer: 2 },
+            { q: "Lagu yang menceritakan kesedihan atau rasa syukur biasanya menggunakan tangga nada...", options: ["Mayor", "Minor", "Cepat", "Keras"], answer: 1 },
+            { q: "Saat menekan tuts angka 1 pada pianika, jari yang sebaiknya digunakan adalah...", options: ["Jari kelingking", "Jari manis", "Ibu jari (Jempol)", "Jari tengah"], answer: 2 },
+            { q: "Bagian jari yang paling tepat untuk menutup lubang recorder adalah...", options: ["Kuku jari", "Pangkal jari", "Daging ujung jari", "Telapak tangan"], answer: 2 },
+            { q: "Memainkan alat musik melodis memerlukan ... yang tepat agar perpindahan nada lancar.", options: ["Penjarian", "Pukulan", "Tendangan", "Tepukan"], answer: 0 }
+        ];
+
+        const studentsList = [
+            "AFGAN DAYI ALFATH", "AIVINA LATIFAH PUTRY", "ALBAR", "ALDIO DWI RIYANSYAH",
+            "ASHCILLA ZALZABILA", "Astama Satriadi Basya", "DIKI SAPUTRA PRATAMA",
+            "FEBIOLA RAMADHANI", "LAVERO RAYYAN YUDHISTYRA", "M ALBI PRATAMA",
+            "NADA FARA MAULIDA", "NOVISTA CHICILIA HZ", "RAPAEL DEARDO PRATAMA",
+            "RENA TASYA", "REVALDO HERLIAN PRATAMA", "SATRIA ANUGRAH PRATAMA",
+            "SELVA CARESTIA", "SULTHAN MUHAROM BILL AZZAM", "VAHIRAN SYAFIRAH",
+            "SEFRI ANGGESTA PRATAMA"
+        ];
+
+        // Variabel State Kuis
+        let currentQuestions = [];
+        let totalBenar = 0;
+        let totalSalah = 0;
+        let totalTerjawab = 0;
+
+        // Inisialisasi Dropdown Siswa
+        window.onload = () => {
+            const selectEl = document.getElementById('student-select');
+            studentsList.forEach(student => {
+                const opt = document.createElement('option');
+                opt.value = student;
+                opt.innerText = student;
+                selectEl.appendChild(opt);
+            });
+        };
+
+        // Fungsi acak array (Fisher-Yates)
+        function shuffleArray(array) {
+            let shuffled = array.slice();
+            for (let i = shuffled.length - 1; i > 0; i--) {
+                const j = Math.floor(Math.random() * (i + 1));
+                [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+            }
+            return shuffled;
+        }
+
+        // Mulai Kuis untuk siswa yang dipilih
+        function startQuiz() {
+            const selectEl = document.getElementById('student-select');
+            const selectedStudent = selectEl.value;
+
+            if (!selectedStudent) {
+                alert("Silakan pilih nama siswa terlebih dahulu!");
+                return;
+            }
+
+            // Atur UI
+            document.getElementById('setup-screen').classList.add('hidden');
+            document.getElementById('quiz-screen').classList.remove('hidden');
+            document.getElementById('active-student-name').innerText = selectedStudent;
+
+            // Reset Skor
+            totalBenar = 0;
+            totalSalah = 0;
+            totalTerjawab = 0;
+            updateScoreUI();
+            document.getElementById('status-container').classList.add('hidden');
+
+            // Ambil 10 soal acak dari bank soal
+            currentQuestions = shuffleArray(bankSoal).slice(0, 10);
+
+            // Render 10 Soal
+            const container = document.getElementById('quiz-container');
+            container.innerHTML = ''; 
+            
+            currentQuestions.forEach((qObj, qIndex) => {
+                const questionDiv = document.createElement('div');
+                questionDiv.className = 'p-6 bg-white rounded-2xl border-2 border-gray-200 shadow-md transition-all';
+                questionDiv.id = `q-card-${qIndex}`;
+                
+                // Nomor dan Judul Soal
+                const questionTitle = document.createElement('h3');
+                questionTitle.className = 'text-xl font-bold text-gray-800 mb-6';
+                questionTitle.innerText = `${qIndex + 1}. ${qObj.q}`;
+                questionDiv.appendChild(questionTitle);
+
+                // Grid Jawaban (2 kolom agar rapi di landscape)
+                const optionsGrid = document.createElement('div');
+                optionsGrid.className = 'grid grid-cols-1 md:grid-cols-2 gap-4';
+
+                qObj.options.forEach((optText, optIndex) => {
+                    const btn = document.createElement('button');
+                    btn.className = 'text-left p-4 rounded-xl border-2 border-gray-300 bg-gray-50 text-lg hover:bg-blue-50 transition-colors duration-200 font-medium text-gray-700 flex items-center option-btn-' + qIndex;
+                    btn.innerHTML = `<span class="shrink-0 inline-flex items-center justify-center w-10 h-10 bg-gray-200 text-gray-700 rounded-full mr-4 font-bold text-xl">${String.fromCharCode(65 + optIndex)}</span> <span>${optText}</span>`;
+                    
+                    btn.onclick = () => checkAnswer(btn, qIndex, optIndex, qObj.answer, questionDiv);
+                    optionsGrid.appendChild(btn);
+                });
+
+                questionDiv.appendChild(optionsGrid);
+                container.appendChild(questionDiv);
+            });
+
+            // Scroll ke bagian atas kuis
+            document.getElementById('kuis').scrollIntoView({ behavior: 'smooth' });
+        }
+
+        // Pengecekan Jawaban
+        function checkAnswer(clickedBtn, qIndex, selectedOpt, correctOpt, cardDiv) {
+            const allBtns = document.querySelectorAll('.option-btn-' + qIndex);
+            allBtns.forEach(btn => btn.classList.add('disabled'));
+
+            if (selectedOpt === correctOpt) {
+                // Benar
+                clickedBtn.classList.add('correct');
+                cardDiv.classList.add('border-green-400', 'bg-green-50');
+                totalBenar++;
+            } else {
+                // Salah
+                clickedBtn.classList.add('wrong');
+                allBtns[correctOpt].classList.add('correct');
+                cardDiv.classList.add('border-red-400', 'bg-red-50');
+                totalSalah++;
+            }
+
+            totalTerjawab++;
+            updateScoreUI();
+
+            // Cek jika sudah selesai 10 soal
+            if (totalTerjawab === 10) {
+                showFinalStatus();
+            }
+        }
+
+        // Update Angka Skor di Kanan
+        function updateScoreUI() {
+            document.getElementById('answered-count').innerText = `${totalTerjawab} / 10`;
+            document.getElementById('score-benar').innerText = totalBenar;
+            document.getElementById('score-salah').innerText = totalSalah;
+            
+            // 1 Soal Benar = 10 Poin
+            const finalScore = totalBenar * 10;
+            document.getElementById('score-total').innerText = finalScore;
+        }
+
+        // Tampilkan Keterangan Tuntas / Remedial
+        function showFinalStatus() {
+            const finalScore = totalBenar * 10;
+            const statusContainer = document.getElementById('status-container');
+            const statusText = document.getElementById('status-text');
+
+            statusContainer.classList.remove('hidden');
+
+            if (finalScore >= 70) {
+                // Tuntas
+                statusContainer.className = 'py-3 px-4 rounded-xl font-extrabold text-3xl shadow-lg mt-6 bg-green-500 text-white animate-pulse';
+                statusText.innerText = "🎉 LULUS / TUNTAS";
+            } else {
+                // Remedial
+                statusContainer.className = 'py-3 px-4 rounded-xl font-extrabold text-3xl shadow-lg mt-6 bg-red-500 text-white animate-pulse';
+                statusText.innerText = "⚠️ REMEDIAL";
+            }
+        }
+
+        // Kembali ke Layar Pilih Siswa
+        function resetApp() {
+            document.getElementById('setup-screen').classList.remove('hidden');
+            document.getElementById('quiz-screen').classList.add('hidden');
+            document.getElementById('student-select').value = ""; // reset dropdown
+            document.getElementById('kuis').scrollIntoView({ behavior: 'smooth' });
+        }
+
+    </script>
+</body>
+</html>
